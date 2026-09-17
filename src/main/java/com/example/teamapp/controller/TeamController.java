@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class TeamController {
     @GetMapping("/")
     public String index(Model model) {
-        model.addAttribute("leaderMsg", "リーダーです！");
+        model.addAttribute("leaderMsg", "リーダーです！！");
         // TODO: ここにメンバーのServiceを後で呼ぶ
         return "index";
     }
