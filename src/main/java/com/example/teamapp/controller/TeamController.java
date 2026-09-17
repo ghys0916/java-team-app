@@ -14,7 +14,7 @@ public class TeamController {
 
     @GetMapping("/")
     public String index(Model model) {
-        model.addAttribute("leaderMsg", "リーダーです！");
+        model.addAttribute("leaderMsg", "リーダーです！!");
         model.addAttribute("KitayamaMsg", kitayamaService.getProfile()); // 画面に渡す
         model.addAttribute("NakamuraMsg", nakamuraService.getProfile()); // 画面に渡す
         return "index";
